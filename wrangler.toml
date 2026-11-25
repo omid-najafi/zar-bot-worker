@@ -12,7 +12,7 @@ database_name = "zar-bot"
 # ─── KV برای state بازی‌ها/صف مچ‌میکینگ (wrangler kv namespace create ZAR_STATE) ───
 [[kv_namespaces]]
 binding = "STATE"
-id = "اینجا-آیدی-kv-را-بگذارید"
+id = "8b65cc7d1ea04b7eabc4841e7ffb160c"
 
 # ─── Cron Trigger: هر ساعت (پرداخت درآمد) ───
 [triggers]
