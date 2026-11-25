@@ -1,0 +1,22 @@
+name = "zar-bot"
+main = "src/index.js"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# ─── اتصال D1 (بعد از ساخت با wrangler d1 create zar-bot، id را اینجا بگذارید) ───
+[[d1_databases]]
+binding = "DB"
+database_name = "zar-bot"
+# database_id = "اینجا-آیدی-دیتابیس-را-بگذارید"
+
+# ─── KV برای state بازی‌ها/صف مچ‌میکینگ (wrangler kv namespace create ZAR_STATE) ───
+[[kv_namespaces]]
+binding = "STATE"
+id = "اینجا-آیدی-kv-را-بگذارید"
+
+# ─── Cron Trigger: هر ساعت (پرداخت درآمد) ───
+[triggers]
+crons = ["0 * * * *"]
+
+[observability]
+enabled = true
