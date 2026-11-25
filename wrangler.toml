@@ -7,7 +7,7 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "zar-bot"
-# database_id = "اینجا-آیدی-دیتابیس-را-بگذارید"
+# database_id = "4f68eeeb-8302-4858-9c83-9bc93ccfd179"
 
 # ─── KV برای state بازی‌ها/صف مچ‌میکینگ (wrangler kv namespace create ZAR_STATE) ───
 [[kv_namespaces]]
